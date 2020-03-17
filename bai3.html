@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    let str = 'chdJasbdjasgJAHDqw';
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    let ketqua = [];
+
+    for(let i=0; i<str.length; i++)
+    {
+        if(UPPER.indexOf(str[i]) !== -1)
+        {
+            ketqua.push(str[i].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[i]) !== -1)
+        {
+            ketqua.push(str[i].toUpperCase());
+        }
+        else
+        {
+            ketqua.push(str[i]);
+        }
+    }
+    document.write(ketqua.join(''));
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    const so=window.prompt();
+    const mang = so.toString();
+    const ketqua = [mang[0]];
+
+    for(let i=1; i<mang.length; i++)
+    {
+        if((mang[i-1]%2 === 0)&&(mang[i]%2 === 0))
+        {
+            ketqua.push('-', mang[i]);
+        }
+        else
+        {
+            ketqua.push(mang[i]);
+        }
+
+    }
+    document.write(ketqua.join(''));
+
+</script>
+</body>
+</html>
